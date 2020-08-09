@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+input[type=text] {
+    padding: 10px;
+    width: 100%;
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 20px;
+}
+
+::placeholder {
+    font-size: 20px;
+    color: darkslategrey;
+}
+
+.update-todo {
+    background-color: #00cc00;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 10%;
+}
+
+.input-list {
+    border: none;
+    font-size: 20px;
+
+}
+
+.todo {
+  border-bottom:2px solid #ccc;
+}
+
+.fa-trash, .fa-check, .fa-edit {
+    pointer-events: none;
+}
+
+.fa-check {
+    color: #00cc00;
+    font-size: 15px;
+}
+
+.fa-trash {
+    color: red;
+    font-size: 15px;
+}
+
+.fa-edit {
+    color:aqua;
+    font-size: 15px;
+}
+
+.todo {
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 70% 10% 10% 10%;
+    justify-content: space-between;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: green;
+}
+
+.edit-btn, .trash-btn, .complete-btn {
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+}
